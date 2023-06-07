@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading-div">
+      <div class="profile-main-loader">
+        <div class="loader">
+          <svg class="circular-loader" viewBox="25 25 50 50">
+            <circle
+              class="loader-path"
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke="#70c542"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h1 class="title">Hangman</h1>
+    </div>
+    <div id="game-div">
+      <p class="result"></p>
+      <p class="answer"></p>
+      <p class="tries"></p>
+      <p class="word"></p>
+      <div class="letter-buttons">
+        <button class="btn" id="a" onclick="handleClick(event)">A</button>
+        <button class="btn" id="b" onclick="handleClick(event)">B</button>
+        <button class="btn" id="c" onclick="handleClick(event)">C</button>
+        <button class="btn" id="d" onclick="handleClick(event)">D</button>
+        <button class="btn" id="e" onclick="handleClick(event)">E</button>
+        <button class="btn" id="f" onclick="handleClick(event)">F</button>
+        <button class="btn" id="g" onclick="handleClick(event)">G</button>
+        <button class="btn" id="h" onclick="handleClick(event)">H</button>
+        <button class="btn" id="i" onclick="handleClick(event)">I</button>
+        <button class="btn" id="j" onclick="handleClick(event)">J</button>
+        <button class="btn" id="k" onclick="handleClick(event)">K</button>
+        <button class="btn" id="l" onclick="handleClick(event)">L</button>
+        <button class="btn" id="m" onclick="handleClick(event)">M</button>
+        <button class="btn" id="n" onclick="handleClick(event)">N</button>
+        <button class="btn" id="o" onclick="handleClick(event)">O</button>
+        <button class="btn" id="p" onclick="handleClick(event)">P</button>
+        <button class="btn" id="q" onclick="handleClick(event)">Q</button>
+        <button class="btn" id="r" onclick="handleClick(event)">R</button>
+        <button class="btn" id="s" onclick="handleClick(event)">S</button>
+        <button class="btn" id="t" onclick="handleClick(event)">T</button>
+        <button class="btn" id="u" onclick="handleClick(event)">U</button>
+        <button class="btn" id="v" onclick="handleClick(event)">V</button>
+        <button class="btn" id="w" onclick="handleClick(event)">W</button>
+        <button class="btn" id="x" onclick="handleClick(event)">X</button>
+        <button class="btn" id="y" onclick="handleClick(event)">Y</button>
+        <button class="btn" id="z" onclick="handleClick(event)">Z</button>
+      </div>
+      <p id="explanation"></p>
+      <button id="play-again-btn">Play again</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

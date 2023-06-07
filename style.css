@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #525252;
+}
+
+#loading-div {
+  position: relative;
+  height: 100%;
+}
+
+#game-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#game-div > .tries {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ebebeb;
+  font-weight: 600;
+}
+
+#game-div > .word {
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #ebebeb;
+  font-weight: 600;
+}
+
+#game-div > .result {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ebebeb;
+}
+
+#game-div > .answer {
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #ebebeb;
+}
+
+#explanation {
+  color: #ebebeb;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background-color: #414141;
+  margin-bottom: 40px;
+}
+
+.header > .title {
+  color: #ca3e47;
+}
+
+.letter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.letter-buttons > .btn {
+  width: 55px;
+  height: 55px;
+  font-family: inherit;
+  border: none;
+  border-radius: 10px;
+  background-color: #414141;
+  color: #ebebeb;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.letter-buttons > .btn:hover {
+  background-color: #ebebeb;
+  color: #414141;
+}
+
+.letter-buttons > .btn:disabled {
+  background-color: #ca3e47;
+  color: #ebebeb;
+}
+
+.letter-buttons > .btn:disabled:hover {
+  color: #ebebeb;
+  cursor: not-allowed;
+}
+
+#play-again-btn {
+  font-family: inherit;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: #414141;
+  color: #ebebeb;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#play-again-btn:hover {
+  background-color: #ebebeb;
+  color: #414141;
+}
+
+@media (min-width: 1100px) {
+  #game-div {
+    padding: 0 20%;
+  }
+}
+
+/* Loading circle */
+
+.profile-main-loader {
+  left: 50% !important;
+  margin-left: -100px;
+  position: fixed !important;
+  top: 50% !important;
+  margin-top: -100px;
+  width: 45px;
+  z-index: 9000 !important;
+}
+
+.profile-main-loader .loader {
+  position: relative;
+  margin: 0px auto;
+  width: 200px;
+  height: 200px;
+}
+.profile-main-loader .loader:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.circular-loader {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+.loader-path {
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    stroke: #ca3e47;
+  }
+  40% {
+    stroke: #ca3e47;
+  }
+  66% {
+    stroke: #ca3e47;
+  }
+  80%,
+  90% {
+    stroke: #ca3e47;
+  }
+}
+@keyframes color {
+  0% {
+    stroke: #ca3e47;
+  }
+  40% {
+    stroke: #ca3e47;
+  }
+  66% {
+    stroke: #ca3e47;
+  }
+  80%,
+  90% {
+    stroke: #ca3e47;
+  }
+}
