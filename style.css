@@ -26,48 +26,48 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 #game-div > .tries {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
   color: #ebebeb;
   font-weight: 600;
 }
 
 #game-div > .word {
-  margin-bottom: 40px;
-  font-size: 16px;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
   color: #ebebeb;
   font-weight: 600;
 }
 
 #game-div > .result {
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-bottom: 0.625rem;
+  font-size: 1.25rem;
   color: #ebebeb;
 }
 
 #game-div > .answer {
-  margin-bottom: 40px;
-  font-size: 20px;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
   color: #ebebeb;
 }
 
 #explanation {
   color: #ebebeb;
-  font-size: 16px;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 5.625rem;
   background-color: #414141;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .header > .title {
@@ -78,16 +78,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  gap: 0.625rem;
+  margin-bottom: 2.5rem;
 }
 
 .letter-buttons > .btn {
-  width: 55px;
-  height: 55px;
+  width: 3.438rem;
+  height: 3.438rem;
   font-family: inherit;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #414141;
   color: #ebebeb;
   transition: 0.2s ease-in-out;
@@ -111,10 +111,10 @@ body {
 
 #play-again-btn {
   font-family: inherit;
-  height: 40px;
-  width: 150px;
+  height: 2.5rem;
+  width: 9.375rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #414141;
   color: #ebebeb;
   transition: 0.2s ease-in-out;
